@@ -9,6 +9,7 @@ FROM
 GROUP BY
     sexo;
 
+%sql
 -- Insight 2: Total de sinistros por tipo de cobertura
 -- Esta consulta soma o número de sinistros para cada tipo de cobertura (CASCO, RCDM, etc.).
 SELECT
@@ -23,6 +24,7 @@ GROUP BY
 ORDER BY
     total_sinistros DESC;
 
+%sql
 -- Insight 3: Total de sinistros por região
 -- Soma o número de sinistros por região para identificar as áreas de maior ocorrência.
 SELECT

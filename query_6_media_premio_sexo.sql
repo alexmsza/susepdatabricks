@@ -1,20 +1,22 @@
--- Pergunta 6: Média de prêmio por sexo e categoria do veículo (versão final)
--- Analisa o prêmio médio pago por sexo, quebrando por categoria do veículo.
 SELECT
-    s.descricao AS sexo,
-    c.CATEGORIA AS categoria_veiculo,
-    AVG(a.premio1) AS media_premio
+    s.descricao AS Sexo,
+    -- Conta o número de apólices para dar contexto à média
+    COUNT(*) AS Quantidade_Apolices,
+    -- Calcula a média do prêmio, arredondando para 2 casas decimais para melhor leitura
+    ROUND(AVG(TRY_CAST(c.premio1 AS DECIMAL(18, 2))), 2) AS Media_Premio
 FROM
-    arq_casco_comp a
+    -- Tabela principal com os dados de apólices
+    arq_casco_comp AS c
 JOIN
-    auto_sexo s ON a.sexo = s.codigo
-JOIN
-    auto_cat c ON a.cat_vei = c.CODIGO
+    -- Tabela de domínio para decodificar o sexo
+    auto_sexo AS s ON c.sexo = s.codigo
 WHERE
-    s.codigo IN ('M', 'F')
+    -- 1. Foca a análise apenas em segurados pessoa física (Masculino e Feminino)
+    c.sexo IN ('M', 'F')
+    -- 2. Garante que estamos considerando apenas prêmios válidos e maiores que zero
+    AND TRY_CAST(c.premio1 AS DECIMAL(18, 2)) > 0
 GROUP BY
-    s.descricao,
-    c.CATEGORIA
+    s.descricao
 ORDER BY
-    s.descricao,
-    c.CATEGORIA;
+    -- Ordena o resultado pela média de prêmio, do maior para o menor
+    Media_Premio DESC;

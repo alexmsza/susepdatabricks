@@ -11,7 +11,7 @@ response = requests.get(url, verify=False)
 response.raise_for_status()
 
 # Local directory for extracted files
-output_dir = "/Volumes/workspace/default/susep-data/autoseg2021/raw"
+output_dir = "./raw"
 os.makedirs(output_dir, exist_ok=True)
 
 # Extract the ZIP contents

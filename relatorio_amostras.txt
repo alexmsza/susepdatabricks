@@ -1,0 +1,203 @@
+======================================================================
+ARQUIVO: PremReg.csv
+======================================================================
+ regiao                              descricao tipo_prem        exposicao          premios         is_media
+      1 RS - Met. Porto Alegre e Caxias do Sul       APP 216479,064890445 10285208,9103045 64906,0407652793
+      1 RS - Met. Porto Alegre e Caxias do Sul     CASCO 278182,309753791  381677138,10189 45461,0294496334
+      1 RS - Met. Porto Alegre e Caxias do Sul      RCDM 277104,652309882 86428419,9693478 126860,284636699
+      1 RS - Met. Porto Alegre e Caxias do Sul      RCDP 275703,567422268 37706331,0401562 169712,190143947
+      1 RS - Met. Porto Alegre e Caxias do Sul     TOTAL 291509,827300466  516049310,02814 375100,061724622
+      2                    RS - Demais regiões       APP 270718,148521531  14478425,195622 74897,7695219639
+      2                    RS - Demais regiões     CASCO 315321,043198841 399879995,195425 48790,2426229819
+      2                    RS - Demais regiões      RCDM 326043,152576795 97664935,2275197 146796,387584691
+      2                    RS - Demais regiões      RCDP 325768,166290481 50396707,8022285 191613,864414591
+      2                    RS - Demais regiões     TOTAL  335568,87839405   562386270,0705  437728,95832302
+
+======================================================================
+ARQUIVO: SinReg.csv
+======================================================================
+ regiao                              descricao tipo_sin  numSinistros  indenizacoes
+      1 RS - Met. Porto Alegre e Caxias do Sul      APP            15        159461
+      1 RS - Met. Porto Alegre e Caxias do Sul    CASCO         91355     273192742
+      1 RS - Met. Porto Alegre e Caxias do Sul     RCDM         14329      92443298
+      1 RS - Met. Porto Alegre e Caxias do Sul     RCDP           144       2438190
+      1 RS - Met. Porto Alegre e Caxias do Sul    TOTAL        105843     368233691
+      2                    RS - Demais regiões      APP            53        922744
+      2                    RS - Demais regiões    CASCO         88005     341581626
+      2                    RS - Demais regiões     RCDM         16938     112400886
+      2                    RS - Demais regiões     RCDP           135       2814072
+      2                    RS - Demais regiões    TOTAL        105131     457719328
+
+======================================================================
+ARQUIVO: arq_casco3_comp.csv
+======================================================================
+ COD_TARIF  REGIAO COD_MODELO  ANO_MODELO   CEP          EXPOSICAO           PREMIO  FREQ_SIN1  INDENIZ1  FREQ_SIN23  INDENIZ23  FREQ_SIN4  INDENIZ4  FREQ_SIN9  INDENIZ9 ENVIO
+         3      30   014087-2        2018 66110   0,50684928894043 495,323333740234          0         0           0          0          0         0          0         0 2021A
+         3      99   002092-3        2013 36576 0,0246575344353914 31,8442630767822          0         0           0          0          0         0          0         0 2021A
+         5       9   826046-0        2015 12120 0,0410958901047707 53,2377052307129          0         0           0          0          0         0          0         0 2021A
+         1      16   015112-2        2014 36035  0,506849311292171 425,545295715332          0         0           1      36240          0         0          2       145 2021A
+         3      11   015144-0        2018  4060                  0                0          0         0           1       2866          0         0          0         0 2021A
+         3       4   005193-4        2007 89600  0,504109561443329 526,931884765625          0         0           0          0          0         0          0         0 2021A
+         1       6   004328-1        2011 85410   3,31506840512156 3907,74541664124          0         0           0          0          0         0          0         0 2021A
+         1       6   004441-5        2018     0                  0                0          0         0           1       4833          0         0          0         0 2021A
+         3      11   015064-9        2013  5344                  0                0          0         0           0          0          0         0          2       241 2021A
+         1      17   025266-2        2019 35910  0,482191771268845 774,254104614258          0         0           0          0          0         0          0         0 2021A
+
+======================================================================
+ARQUIVO: arq_casco4_comp.csv
+======================================================================
+ COD_TARIF  REGIAO COD_MODELO  ANO_MODELO                              CIDADE           EXPOSICAO           PREMIO  FREQ_SIN1  INDENIZ1  FREQ_SIN23  INDENIZ23  FREQ_SIN4  INDENIZ4  FREQ_SIN9  INDENIZ9  COD_CIDADE ENVIO
+         1       2   014056-2        2015 CRUZ ALTA (VER CEP POR LOGRADOUROS)   0,504109561443329 402,688537597656          0         0           0          0          0         0          5       430        2273 2021A
+         1       2   005416-0        2016                    BARRA DO RIBEIRO  0,0493150688707829 54,2942771911621          0         0           0          0          0         0          0         0        1992 2021A
+         1       2   005416-0        2016                       CAXIAS DO SUL 0,00547945220023394 155,450973510742          0         0           0          0          0         0          0         0         285 2021A
+         1       2   005416-0        2016                        NOVA BRESCIA   0,506849318742752 537,137893676758          0         0           1       1141          0         0          0         0        1643 2021A
+         1       2   005416-0        2016                     NOVA PETROPOLIS   0,506849303841591 323,768035888672          0         0           0          0          0         0          0         0        1677 2021A
+         1       2   005416-0        2016                             ROLANTE  0,0301369857043028 17,4617481231689          0         0           0          0          0         0          0         0        2662 2021A
+         1       2   005416-0        2016                             TAQUARA   0,443835616111755 450,147552490234          0         0           0          0          0         0          0         0        3197 2021A
+         1       2   005416-0        2016                         TRÊS PASSOS   0,372602745890617  120,09808921814          0         0           1       1221          0         0          0         0        3275 2021A
+         1       2   005416-0        2016                             VACARIA   0,298630148172379 247,483612060547          0         0           0          0          0         0          0         0        3359 2021A
+         1       2   005416-0        2017                          MONTENEGRO    0,50684928894043  50,477954864502          0         0           0          0          0         0          0         0        1557 2021A
+
+======================================================================
+ARQUIVO: arq_casco_comp.csv
+======================================================================
+ COD_TARIF  REGIAO COD_MODELO  ANO_MODELO SEXO  IDADE          EXPOSICAO1          PREMIO1  EXPOSICAO2  PREMIO2         IS_MEDIA  FREQ_SIN1  INDENIZ1  FREQ_SIN2  INDENIZ2  FREQ_SIN3  INDENIZ3  FREQ_SIN4  INDENIZ4  FREQ_SIN9  INDENIZ9 ENVIO
+         9      11   515153-8        2014    J      0    16,8219174854457 20984,1537723541           0        0 24936,1741912814          0         0          0         0          0         0          0         0          0         0 2021A
+         1       2   025081-3        2006    F      5   0,734246578067541 421,130994796753           0        0 11707,3506504372          0         0          0         0          0         0          0         0          0         0 2021A
+         1      23   004318-4        2014    F      2   0,504109561443329 309,683074951172           0        0 17903,9991278803          0         0          0         0          0         0          0         0          0         0 2021A
+         1      39   004354-0        2011    F      5   0,402739733457565 257,049194335938           0        0 22636,9999743224          0         0          0         0          0         0          0         0          0         0 2021A
+         1      13   515021-3        1999    M      5   0,506849318742752 947,028137207031           0        0 53464,8870965855          0         0          0         0          0         0          0         0          0         0 2021A
+         3       2   002093-1        2021    F      5 0,00547945220023394 43,2767906188965           0        0 232207,005555351          0         0          0         0          0         0          0         0          0         0 2021A
+         7      17   004491-1        2019    0      0   0,484931498765945 905,738403320313           0        0 104553,998807616          0         0          0         0          0         0          0         0          0         0 2021A
+         1      38   001343-9        2016    0      1   0,504109561443329 358,448089599609           0        0 23249,9991498725          0         0          0         0          0         0          0         0          0         0 2021A
+         3      12   004387-7        2013    F      2   0,249315068125725 438,038208007813           0        0 47854,0014548822          0         0          0         0          0         0          0         0          0         0 2021A
+         3       6   025200-0        2019    M      0   0,504109561443329    6030,38671875           0        0 113698,002148375          0         0          0         0          0         0          0         0          0         0 2021A
+
+======================================================================
+ARQUIVO: auto2_grupo.csv
+======================================================================
+ grpid                descricao
+     1                    ACURA
+     2       ADLY MOTOS - TODAS
+     3          AGRALE - MARRUÁ
+     4 AGRALE CAMINHOES - TODOS
+     5     AGRALE MOTOS - TODAS
+     6           ALFA ROMEO 145
+     7           ALFA ROMEO 147
+     8           ALFA ROMEO 155
+     9           ALFA ROMEO 156
+    10           ALFA ROMEO 164
+
+======================================================================
+ARQUIVO: auto2_vei.csv
+======================================================================
+  CODIGO                                      DESCRICAO              GRUPO  COD_GRUPO
+038003-2                         Acura - Integra GS 1.8              ACURA          1
+038002-4                         Acura - Legend 3.2/3.5              ACURA          1
+038001-6                                Acura - NSX 3.0              ACURA          1
+840015-6                                 ADLY - ATV 100 ADLY MOTOS - TODAS          2
+840014-8                                  ADLY - ATV 50 ADLY MOTOS - TODAS          2
+840007-5                           ADLY - JAGUAR JT 100 ADLY MOTOS - TODAS          2
+840008-3                            ADLY - JAGUAR JT 50 ADLY MOTOS - TODAS          2
+840016-4                                   ADLY - RT 50 ADLY MOTOS - TODAS          2
+060001-6       Agrale - MARRUÁ 2.8 12V 132cv TDI Diesel    AGRALE - MARRUÁ          3
+060004-0 Agrale - MARRUÁ AM 100 2.8 140CV CD TDI Diesel    AGRALE - MARRUÁ          3
+
+======================================================================
+ARQUIVO: auto_cat.csv
+======================================================================
+ CODIGO                               CATEGORIA
+      1                        Passeio nacional
+      2                       Passeio importado
+      3          Pick-up (nacional e importado)
+      4 Veículo de Carga (nacional e importado)
+      5      Motocicleta (nacional e importado)
+      6           Ônibus (nacional e importado)
+      7      Utilitários (nacional e importado)
+      9                                  Outros
+
+======================================================================
+ARQUIVO: auto_cau.csv
+======================================================================
+ CODIGO               CAUSA
+      1      Roubo ou furto
+      2     Colisão parcial
+      3 Colisão Perda Total
+      4            Incêndio
+      9              Outros
+
+======================================================================
+ARQUIVO: auto_cep.csv
+======================================================================
+ REGSUSEP  CEPINICIAL          CIDADE  CEP_FINAL  CODREG                     REGDECIRC  cepini  cepfim
+        1       90010    PORTO ALEGRE      91920       1 METROPOLITANA DE PORTO ALEGRE   90010   91920
+        1       92010          CANOAS      92420       1 METROPOLITANA DE PORTO ALEGRE   92010   92420
+        1       92500          GUAÍBA      92849       1 METROPOLITANA DE PORTO ALEGRE   92500   92849
+        1       92990        ELDORADO      92999       1 METROPOLITANA DE PORTO ALEGRE   92990   92999
+        1       93010    SÃO LEOPOLDO      93150       1 METROPOLITANA DE PORTO ALEGRE   93010   93150
+        1       93180          PORTÃO      93199       1 METROPOLITANA DE PORTO ALEGRE   93180   93199
+        1       93210 SAPUCAIA DO SUL      93230       1 METROPOLITANA DE PORTO ALEGRE   93210   93230
+        1       93260          ESTEIO      93295       1 METROPOLITANA DE PORTO ALEGRE   93260   93295
+        1       93310   NOVO HAMBURGO      93548       1 METROPOLITANA DE PORTO ALEGRE   93310   93548
+        1       93600  ESTÂNCIA VELHA      93699       1 METROPOLITANA DE PORTO ALEGRE   93600   93699
+
+======================================================================
+ARQUIVO: auto_cidade.csv
+======================================================================
+             CIDADE  CODIGO
+ABADIA DOS DOURADOS       1
+          ABADIANIA       2
+             ABAETE       3
+            ABAIARA       4
+             ABAIRA       5
+              ABARE       6
+             ABATIA       7
+      ABDON BATISTA       8
+       ABELARDO LUZ       9
+         ABRE CAMPO      10
+
+======================================================================
+ARQUIVO: auto_cob.csv
+======================================================================
+ CODIGO                COBERTURA
+      1             Compreensiva
+      2         Incêndio e roubo
+      3                 Incêndio
+      4 Exclusiva de Perda total
+      9                   Outros
+
+======================================================================
+ARQUIVO: auto_idade.csv
+======================================================================
+ codigo            descricao
+      0 Não informada       
+      1 Entre 18 e 25 anos  
+      2 Entre 26 e 35 anos  
+      3 Entre 36 e 45 anos  
+      4 Entre 46 e 55 anos  
+      5 Maior que 55 anos   
+
+======================================================================
+ARQUIVO: auto_reg.csv
+======================================================================
+ CODIGO                                DESCRICAO
+      1   RS - Met. Porto Alegre e Caxias do Sul
+      2                      RS - Demais regiões
+      3            SC - Met. Florianópolis e Sul
+      4                               SC - Oeste
+      5           SC - Blumenau e demais regiões
+      6 PR - F.Iguaþu-Medianeira-Cascavel-Toledo
+      7                       PR - Met. Curitiba
+      8                      PR - Demais regiões
+      9           SP - Vale do Paraíba e Ribeira
+     10    SP - Litoral Norte e Baixada Santista
+
+======================================================================
+ARQUIVO: auto_sexo.csv
+======================================================================
+codigo            descricao
+     M Masculino           
+     F Feminino            
+     J Jurídica            
+     0 Sem Informação      
+
