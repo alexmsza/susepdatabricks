@@ -53,7 +53,7 @@ criar_view_temporaria(nome_tabela="SinReg")
    - Objetivo: Avaliar a compreensão sobre importação e preparação de dados.
    - Repostas: Criar um volume no catalog do databricks e executar um script para baixar os dados e extrair diretamente da fonte.
   ´´´python
-    import requests
+  import requests
     import zipfile
     import io
     import os
