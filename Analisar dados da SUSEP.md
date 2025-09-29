@@ -52,30 +52,31 @@ criar_view_temporaria(nome_tabela="SinReg")
    - Questão: Como você importaria os arquivos CSV do 2º semestre de 2020 para uma plataforma como o Databricks usando SQL? Descreva os passos necessários para garantir que os dados sejam carregados corretamente e estejam prontos para análise.
    - Objetivo: Avaliar a compreensão sobre importação e preparação de dados.
    - Repostas: Criar um volume no catalog do databricks e executar um script para baixar os dados e extrair diretamente da fonte.
-  ´´´python
-  import requests
-    import zipfile
-    import io
-    import os
-    
-    # URL of the ZIaP file
-    url = "https://www2.susep.gov.br/redarq.asp?arq=Autoseg2021A%2ezip"
-    
-    # Download the ZIP file without verifying the certificate
-    response = requests.get(url, verify=False)
-    response.raise_for_status()
-    
-    # Local directory for extracted files
-    output_dir = "/Volumes/workspace/default/teste/autoseg2021"
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Extract the ZIP contents
-    with zipfile.ZipFile(io.BytesIO(response.content)) as z:
-        z.printdir()
-        z.extractall(output_dir)
-    
-    print(f"Folder created at: {output_dir}")
-  ´´´
+```python
+import requests
+import zipfile
+import io
+import os
+
+# URL of the ZIP file
+url = "https://www2.susep.gov.br/redarq.asp?arq=Autoseg2021A%2ezip"
+
+# Download the ZIP file without verifying the certificate
+response = requests.get(url, verify=False)
+response.raise_for_status()
+
+# Local directory for extracted files
+output_dir = "/Volumes/workspace/default/teste/autoseg2021"
+os.makedirs(output_dir, exist_ok=True)
+
+# Extract the ZIP contents
+with zipfile.ZipFile(io.BytesIO(response.content)) as z:
+    z.printdir()
+    z.extractall(output_dir)
+
+print(f"Folder created at: {output_dir}")
+```
+
 
 2. Exploração de Dados:
    - Questão: Quais são os primeiros insights que você pode extrair ao explorar as bases de dados importadas? Cite ao menos três descobertas iniciais baseadas em consultas SQL simples.
